@@ -1,0 +1,87 @@
+/******** Base Styling ********/
+* {
+	box-sizing: border-box;
+	font: Arial;
+}
+
+h1 {
+	text-align: center;
+}
+
+.row {
+	width: 100%;
+}
+
+/******** Large Devices ********/
+@media (min-width: 992px) {
+	.col-lg
+	{
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/******** Medium Device ********/
+@media (max-width: 768px) and (min-width: 991px) {
+	.col-md-1 {
+		float: left;
+		width: 50%;
+	}
+	.col-md-2 {
+		float: left;
+		width: 100%;
+	}
+}
+
+/******** Absolute Relative Positioning ********/
+/*
+.relative {
+	position: relative;
+	width: 450px;
+	height: 200px;
+	padding-top: 50px;
+	border: 4px solid #000000;
+}
+
+.absolute {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 100px;
+	height: 30px;
+	border: 3px solid #000000;
+}
+*/
+
+/******** Setion Formating ********/
+section {
+	border: 1px solid #000000;
+	background-color: gray;
+	margin: 10px;
+}
+ /******** Content Format (Heading) ********/
+section>h2 {
+	float: right;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	margin: 0;
+	width: 170px;
+	height: 45px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+section.item1>h2 { background-color: pink; }
+section.item2>h2 { background-color: yellow; }
+section.item3>h2 { background-color: red; }
+
+/******** Content Format (Content) ********/
+section>p {
+	padding-top: 40px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+
